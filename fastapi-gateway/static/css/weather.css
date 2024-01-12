@@ -1,0 +1,185 @@
+/* weather.css */
+/*body{
+    background-color: lightgrey;
+}*/
+/* Establecer el fondo del navbar */
+.navbar {
+    background-color: #3282b8; 
+}
+
+/* Cambiar el color del texto del navbar */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+
+/* Cambiar el color del enlace activo (cuando se hace clic en un enlace) */
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+}
+
+/* Cambiar el color del ícono del toggler (botón de menú en dispositivos móviles) */
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff; /* Cambia el color del ícono según tus preferencias */
+}
+
+/* Cambiar el color del texto del dropdown del usuario */
+.navbar-light .navbar-nav .dropdown-menu a {
+    color: #ffffff; /* Cambia el color del texto según tus preferencias */
+}
+
+/* Cambiar el color del fondo del dropdown del usuario */
+.navbar-light .navbar-nav .dropdown-menu {
+    background-color: #3282b8; /* Cambia el color de fondo según tus preferencias */
+}
+
+.text-center .text-lg-start .text-white{
+    background-color: #3282b8;
+}
+
+.avatar-btn {
+    border: none;
+    color: #fff;
+}
+.avatar-btn:hover {
+    color: #6c757d; /* Cambia el color al pasar el ratón sobre el botón */
+}
+/* Estilo personalizado para el botón de colapso */
+.custom-toggler {
+    background-color: #ffffff; /* Fondo blanco */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para el ícono del botón de colapso */
+.custom-toggler i {
+    color: #3282b8; /* Cambia el color del ícono según tus preferencias */
+}
+
+/* Estilo cuando pasas el ratón por encima del botón de colapso */
+.custom-toggler:hover {
+    background-color: #f8f9fa; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+
+#weatherDetails {
+    text-align: center;
+    color: #fff;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la imagen de fondo de la tarjeta */
+.bg-image {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bg-image img {
+    width: 100%;
+    height: auto;
+}
+
+#getWeatherForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#favoritesContainer h1 {
+    text-align: center;
+}
+
+#favoritesList {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: -60px;
+}
+
+#favoritesList li {
+    margin-right: 30px;
+}
+#city {
+    padding: 10px;
+    border: 1px solid #185279; /* Añadir borde al input */
+    border-radius: 5px 0 0 5px;
+    width: 300px; /* Hacer el input más largo según sea necesario */
+}
+
+#city:focus {
+    outline: none;
+    border-color: #3282b8; /* Cambiar el color del borde al enfocar */
+}
+
+button {
+    background-color: #3282b8; 
+    color: #fff;
+    border: 1px solid #3282b8;  /* Añadir borde al botón */
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #185279;
+    border-color: #185279; /* Cambiar el color del borde al pasar el ratón */
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding-top: 20%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.hero-section .section-overlay {
+    z-index: 2;
+    opacity: 0.45;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.hero-section .container .row {
+    height: 100%;
+    width: 100%;
+}
+
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.custom-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor de '0.5' para cambiar la opacidad */
+    z-index: 1;
+}
+

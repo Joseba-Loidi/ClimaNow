@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  todos-microservice:
+    build: ./todo-fastapi-microservice
+    ports:
+      - "127.0.0.1:8001:8000/tcp"
+    networks:
+      - app-network
+
+  auth-microservice:
+    build: ./express-auth-api
+    ports:
+      - "127.0.0.1:8002:3000/tcp"
+    networks:
+      - app-network
+
+  main-app:
+    build: ./fastapi-gateway
+    ports:
+      - "127.0.0.1:8080:8000/tcp"
+    environment:
+      - TODO_SERVICE_URL=http://todos-microservice:8000
+      - AUTH_SERVICE_URL=http://auth-microservice:3000/api/user
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

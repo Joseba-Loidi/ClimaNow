@@ -1,0 +1,85 @@
+/* Contenido de loginstyles.css */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    color: #1b262c;
+    background-color: #0f4c75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#formTitle {
+    font-size: 250%;
+    color: #bbe1fa;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 320px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    background-color: #3282b8;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: #bbe1fa;
+    color: #1b262c;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0f4c75;
+    color: #bbe1fa;
+}
+
+#formToggle {
+    margin-top: 10px;
+    font-size: 90%;
+    color: #bbe1fa;
+}
+
+#formToggle a {
+    text-decoration: none;
+    color: #bbe1fa;
+}
+
+#formToggle a:hover {
+    color: #1b262c;
+}
+
+.error-message-red {
+    color: #ffffff; 
+    background-color: #ff0000;
+    margin-top: 15px; 
+    text-align: center;
+    border-radius: 3px;
+}
